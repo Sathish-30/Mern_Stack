@@ -1,0 +1,76 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  padding-block: 20px;
+}
+.header h3 {
+  text-align: center;
+}
+
+.content {
+  margin: 0px 100px;
+  display: grid;
+  grid-template-areas:
+    "A E"
+    "C P"
+    "T L"
+    "NT .";
+  gap: 25px;
+}
+
+.about-content {
+  grid-area: "A";
+}
+
+.img-user {
+  border-radius: 20px;
+  width: 120px;
+  height: 150px;
+}
+
+.education-content {
+  grid-area: "E";
+}
+
+.aboutMe-content {
+  text-indent: 60px;
+}
+
+.link-element {
+  text-decoration: none;
+  color: blue;
+}
+
+.link-element:visited
+  .link-element:hover
+  .link-element:active
+  .link-element:focus {
+  text-decoration: none;
+}
+
+.contact-content {
+  grid-area: "C";
+}
+
+.contact-icon {
+  padding-left: 10px;
+  padding-right: 15px;
+}
+
+.project-details p {
+  text-indent: 40px;
+}
+
+.skill-content {
+  grid-area: "S";
+}
+
+.skill-list {
+  padding-block: 5px;
+}
+
+.non-tech-content {
+  grid-area: "NT";
+}
