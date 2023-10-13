@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  color: #000;
+  width: 100%;
+  height: 764px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #3c486b;
+}
+
+#ans-text {
+  color: #fff;
+}
+
+#form {
+  background-color: #f0f0f0;
+  padding: 50px 120px;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header {
+  align-self: center;
+  font-size: 1.4rem;
+}
+
+.main-details {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.input-field {
+  /* text-align: center; */
+  font-family: "Roboto", sans-serif;
+  padding-left: 10px;
+  width: 250px;
+  height: 25px;
+  outline: none;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #000;
+}
+
+.sport-detail {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.con-text {
+  font-family: "monospace" serif;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+.sport-options {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-left: 20px;
+}
+
+.preferred-sports {
+  width: 11px;
+}
+
+.info label {
+  font-size: 1.1rem;
+  margin-left: 3px;
+}
+
+.language-detail {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.language-options {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-left: 20px;
+}
+
+.known-language {
+  width: 11px;
+}
+
+.btn-class {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+#btn {
+  width: 100px;
+  height: 40px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+#btn:hover {
+  background-color: #3c486b;
+  color: #fff;
+}

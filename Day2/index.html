@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Student Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="answer">
+        <h4 id="ans-text"></h4>
+      </div>
+      <form id="form">
+        <div class="header">
+          <p class="para-text">Student Registration</p>
+        </div>
+        <div class="main-details">
+          <div class="input-text">
+            <input
+              type="text"
+              class="input-field"
+              placeholder="Enter your name.."
+              id="name"
+            />
+          </div>
+          <div class="input-text">
+            <input
+              type="text"
+              class="input-field"
+              placeholder="Enter your department.."
+              id="department"
+            />
+          </div>
+        </div>
+        <div class="sport-detail">
+          <div class="con-text"><label>Preferred Sports</label></div>
+          <div class="sport-options">
+            <div class="info">
+              <input type="radio" name="Sports" class="preferred-sports" />
+              <label>Cricket</label>
+            </div>
+            <div class="info">
+              <input type="radio" name="Sports" class="preferred-sports" />
+              <label>Hockey</label>
+            </div>
+            <div class="info">
+              <input type="radio" name="Sports" class="preferred-sports" />
+              <label>Baseball</label>
+            </div>
+          </div>
+        </div>
+        <div class="language-detail">
+          <div class="con-text"><label>Language Known</label></div>
+          <div class="language-options">
+            <div class="info">
+              <input type="checkbox" name="languages" class="known-language" />
+              <label>English</label>
+            </div>
+            <div class="info">
+              <input type="checkbox" name="languages" class="known-language" />
+              <label>Tamil</label>
+            </div>
+            <div class="info">
+              <input type="checkbox" name="languages" class="known-language" />
+              <label>Hindi</label>
+            </div>
+            <div class="info">
+              <input type="checkbox" name="languages" class="known-language" />
+              <label>Japanese</label>
+            </div>
+          </div>
+        </div>
+        <div class="btn-class">
+          <input type="button" value="submit" id="btn" />
+        </div>
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
