@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>Reservation Form</title>
+</head>
+<body>
+    <h1>Travel reservation form</h1>
+    <form action="" method="GET" class="form-content">
+        <label for="username" >Full Name</label>
+        <input type="text" value="" id="username" placeholder="FirstName LastName" required>
+        <br>
+        <label for="email" >Full Name</label>
+        <input type="email" value="" id="email" placeholder="Email Address" required>
+        <br>
+        <label for="place">Select Tour package</label>
+        <select id = "place">
+            <option value="Goa">Goa</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Coimabtore">Coimbatore</option>
+            <option value="Hariyana">Hariyana</option>
+            <option value="Telungana">Telungana</option>
+        </select>
+        <br>
+        <label for="arrivalDate">Arrival Date</label>
+        <input type="text" id="arrivalDate" required placeholder="y/m/d">
+        <br>
+        <label for="persons">No of persons : </label>
+        <input type="text" id="persons" required>
+        <br>
+        <label> What would you want to avail</label>
+        <br>
+        <label for="board">Boarding</label>
+        <input type="checkbox" name="activity" value="boarding" id="board">
+        <label for="sight">Sight seeing<label>
+        <input type="checkbox" name="activity" value="sight seeing" id="sight">
+        <label for="footing">Fooding</label>
+        <input type="checkbox" name="activity" value="boarding" id="footing">
+        <br><label for="coupon"> Discount Coupon Code</label>
+        <input type="text" placeholder="Unknown Type" id="coupon">
+        <br>
+        <label>Terms and Conditions </label>
+            <label for="terms1">Agree</label><input type="radio" id="terms1" name="terms">
+            <label for="terms2">disgree</label><input type="radio" id="terms2" name = "terms">
+    </form>
+</body>
+</html>

@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.list{
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+.container{
+    margin: 30px 80px 0 80px ;
+}
+.list li{
+    padding:15.2px;
+    color: white;
+    cursor: pointer;
+}
+.list li:hover{
+    background-color: red;
+}

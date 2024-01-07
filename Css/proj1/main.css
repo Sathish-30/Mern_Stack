@@ -1,0 +1,19 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin-left: 30px;
+}
+p{
+    margin: 0;
+    padding: 4px;
+}
+.container{
+    margin: 0;
+    background:linear-gradient(45deg , #DC84F3 , #FAEF5D);
+    padding:20px;
+}
+.footer{
+    margin-top: 10px;
+}

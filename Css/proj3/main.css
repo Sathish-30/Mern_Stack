@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    background: linear-gradient(#AAD9BB , #7FC7D9 , #0F1035);
+    width: 800px;
+    height: 120px;
+}
+
+body{
+    margin-left: 20px;
+}
