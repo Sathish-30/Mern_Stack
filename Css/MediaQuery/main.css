@@ -1,0 +1,21 @@
+body{
+    color:red;
+}
+
+@media all and (min-width:576px){
+    .title{
+        color: yellow;
+    }
+    .subtitle{
+        color:orange
+    }
+}
+
+@media all and (min-width: 800px){
+    .title{
+        color: green;
+    }
+    .subtitle{
+        color:darkolivegreen;
+    }
+}
