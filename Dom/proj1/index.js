@@ -1,9 +1,12 @@
-const btn = document.getElementById("btn")
+const form = document.getElementById("form")
+const formData = new FormData(form);
+const props = Object.fromEntries(formData);
 
 const handleSubmit = () => {
-    alert("Clicked")
-    const data = document.getElementById("name").value;
-    alert(data);
+    const text = document.getElementById("name").value;
+    if(text === ""){
+        alert("Invalid input");
+    }
 }
 
-btn.addEventListener("submit", handleSubmit);
+form.addEventListener("submit", handleSubmit);
