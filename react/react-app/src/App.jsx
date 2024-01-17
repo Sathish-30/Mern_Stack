@@ -1,10 +1,14 @@
+import Card from "./Card.jsx";
+
 const App = () => {
   return (
     <div>
-      <h2 className="text-3xl text-blue-700 p-[2rem]">Hello world</h2>
+      <Card name="Sathish" />
+      <Card name="ammu" />
+      <Card name="sonia" />
+      <Card />
     </div>
-  )
-}
+  );
+};
 
-export default App
-
+export default App;
