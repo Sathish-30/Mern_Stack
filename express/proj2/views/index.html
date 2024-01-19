@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SignUp Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+<form action="/validate" method="post">
+    <input type="text" name="user_name" value="" placeholder="user"/>
+    <br>
+    <input type="password" name="password" value="" placeholder="password"/>
+    <br>
+    <label for="date">DOB : </label>
+    <input type="date" name="dob" id="date" value=""/>
+    <br>
+    <label>Gender</label>
+    <br>
+    <input type="checkbox" name="gender" value="male" id="male"><label for="male">Male</label>
+    <input type="checkbox" name="gender" value="female" id="female"><label for="female">Female</label>
+    <br>
+    <label for="remark">Remarks</label>
+    <input type="text" name="remark" value="" id="remark">
+    <br>
+    <input type="submit" value="submit">
+</form>
+</body>
+</html>
