@@ -5,11 +5,13 @@ const Login = () => {
     const [userName , setUserName] = useState("");
     const [password , setPassword] = useState("");
 
-    const {setUser} = useContext(UserContext);
+    const {user , setUser} = useContext(UserContext);
 
     const handleSubmit = (e) => {
+        console.log(`Button clicked and the ${userName} and the password is ${password}`)
         e.preventDefault();
         setUser({userName , password});
+        console.log(`The user name is ${user.userName}`);
     }
 
     return (
