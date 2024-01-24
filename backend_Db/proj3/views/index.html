@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="/register" method="post">
+
+        <label for="fname">First Name : </label>
+        <input type="text" placeholder="FirstName" name="fname" value="" id="fname">
+        <br>
+
+        <label for="address2">Last Name : </label>
+        <input type="text" placeholder="LastName" name="lname" value="" id="lname">
+        <br>
+
+
+        <label for="address1">Address1 : </label>
+        <input type="text" placeholder="Address1" name="address1" value="" id="address1">
+        <br>
+
+        <label for="address2">Address2 : </label>
+        <input type="text" placeholder="Address2" name="address2" value="" id="address2">
+        <br>
+
+        <label for="city">City : </label>
+        <input type="text" placeholder="City" name="city" value="" id="city">
+        <br>
+
+        <label for="state">State: </label>
+        <Select id="state" name="state">
+            <option value="tamil nadu">Tamil Nadu</option>
+            <option value="telungana">Telungana</option>
+            <option value="kerala">Kerala</option>
+        </Select>        
+        <br>
+
+        <label for="zip">Zip : </label>
+        <input type="text" placeholder="Zip" name="zip" value="" id="zip">
+        <br>
+
+        <label for="country">Country : </label>
+        <input type="text" placeholder="Country" name="country" value="" id="country">
+        <br>
+
+        <label for="Gender">Gender</label>
+        <input type="radio" name="gender" value="male" id="male"><label for="male">Male</label>
+        <input type="radio" name="gender" value="female" id="female"><label for="female">Female</label>
+        <br>
+
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
