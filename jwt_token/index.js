@@ -8,10 +8,14 @@ const bcrypt = require("bcryptjs");
 const db = require("./database/database.js");
 const jwt = require("jsonwebtoken");
 const cookieParser = require("cookie-parser");
+
+
 db.connect();
 app.use(bodyParser.urlencoded({extended : false}));
 app.use(cookieParser());
 app.get("/" , (req , res) => {
+  console.log(req.cookies);
+  console.log(req.signedCookies);
   res.sendFile(path.join(__dirname , "views/index.html"));
 })
 
@@ -23,26 +27,25 @@ app.post("/register" , async(req , res) =>{
     }
     // Check if user is already available
     const existingUser = await User.findOne({email});
-    if(existingUser !== null){
-      res.status(401).send({"msg":"User already exsisted"});
-    } 
-
-    const myEncPassword = await bcrypt.hash(password , 10);
-    const user = await User.create({
-      email,
-      password:myEncPassword,
-    })
-    const token = jwt.sign(
-      {id:user._id , email},
-      'shhh', // process.env.jwtsecret
-      {
-        expiresIn:"2hr"
-      }
-    )
-    user.token = token;
-    user.password = undefined;
-    res.statusMessage(200).json(user);
-
+    if(existingUser){
+      res.status(401).json(existingUser);
+    } else{
+      const myEncPassword = await bcrypt.hash(password , 10);
+      const user = await User.create({
+        email,
+        password:myEncPassword,
+      })
+      const token = jwt.sign(
+        {id:user._id , email},
+        'shhh', // process.env.jwtsecret
+        {
+          expiresIn:"2hr"
+        }
+      )
+      user.token = token;
+      user.password = undefined;
+      res.status(200).json(user);
+    }
   }catch(err){
     console.log(err);
   }
@@ -54,7 +57,8 @@ app.post("/login" , async(req , res) => {
   // match the password
   // send a token
   try{
-    const {email , password} = req.body();
+    console.log(req.body);
+    const {email , password} = req.body;
     if(!(email && password)){
       res.status(400).send({"error" : "Invalid credentials"});
     }
